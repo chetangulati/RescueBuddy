@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Disaster - admin</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .ct{
+        width: 70%;
+        margin: auto;
+        background: #fafafa;
+
+      }
+    </style>
+    <script type='text/javascript'>
+        function addFields(){
+            var number = 17;
+            // Container <div> where dynamic content will be placed
+            var container = document.getElementById("container");
+
+            for (i=0;i<number;i++){
+                // Append a node with a random text
+                container.appendChild(document.createTextNode("items[" + (i+1) + "].item_id"));
+                // Create an <input> element, set its type and name attributes
+                var input = document.createElement("input");
+                input.type = "text";
+                input.name = "items[" + (i) + "].item_id";
+                container.appendChild(input);
+                // Append a line break
+
+                container.appendChild(document.createTextNode("items[" + (i+1) + "].priority"));
+
+                var input1 = document.createElement("input");
+                input1.type = "text";
+                input1.name = "items[" + (i) + "].priority";
+                container.appendChild(input1);
+
+                container.appendChild(document.createElement("br"));
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div class="ct">
+      <form id="desc" action="admin/disaster" method="post" enctype="multipart/form-data">
+        disaster_name <br>
+        <input type="text" name="disaster_name" value=""><br>
+        disaster_id <br>
+        <input type="text" name="_id"><br>
+        disaster_video <br>
+        <input type="text" name="disaster_video" value=""><br>
+        shelter_steps <br>
+        <textarea id="shelter" name="shelter_steps" rows="8" cols="80"></textarea><br>
+        disaster_desc <br>
+        <textarea name="disaster_desc" rows="8" cols="80"></textarea><br>
+        evac_steps <br>
+        <textarea id="evac" name="evac_steps" rows="8" cols="80"></textarea><br>
+        <div id="container">
+          items
+          <input type="text" name="item[0].item_id" value="">
+          <input type="text" name="item[0].priority" value="">
+        </div>
+        <button type="button" onclick="addFields()" name="button">Add fields</button><br>
+        disaster_image <br>
+        <input type="file" name="disaster_image"><br>
+        disaster_background_image <br>
+        <input type="file" name="disaster_background_image" multiple><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

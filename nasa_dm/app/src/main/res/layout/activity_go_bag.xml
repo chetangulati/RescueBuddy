@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GoBagActivity"
+    android:background="@color/black"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:weightSum="2.3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Your Bag Weight "
+            android:textColor="@color/white"
+            android:textSize="@dimen/medTS" />
+
+        <TextView
+            android:id="@+id/currentBagWt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="9900"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeTS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeTS" />
+
+        <TextView
+            android:id="@+id/totalBagWt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="10000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeTS" />
+        <TextView
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="Recommended Items"
+        android:textColor="@color/white"
+        android:textSize="@dimen/largeTS" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recommendedRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="Additional Items"
+        android:textColor="@color/white"
+        android:textSize="@dimen/largeTS" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/additionalRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+</LinearLayout>

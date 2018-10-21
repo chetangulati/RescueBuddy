@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Disaster Management</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="link1"> https://images.nasa.gov/ \n  https://svs.gsfc.nasa.gov/ \n  https://appliedsciences.nasa.gov/programs/disasters-program \n www.atsdr.cdc.gov \n www.ready.gov \n https://ndma.gov.in/ \n https://ncdp.columbia.edu/ \n https://ndma.gov.in/ \n https://images.nasa.gov/ \n  https://india.gov.in/website-national-disaster-management-authority
+</string>
+
+</resources>

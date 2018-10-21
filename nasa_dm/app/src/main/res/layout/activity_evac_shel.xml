@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:gravity="center"
+    tools:context=".EvacShelActivity">
+
+    <!--
+    name
+    age
+    gender
+    email
+    phone no
+    height
+    weight
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your Disaster Management Account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medTS" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:hint="Enter Name"
+                android:textColorHint="@color/orange"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/profileNameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:hint="Age"
+                android:textColorHint="@color/orange"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/profileAgeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="left"
+                android:text="Select Gender"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/smallTS" />
+
+            <RadioGroup
+                android:id="@+id/profilegenderRg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orange"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/profilemaleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+
+                <RadioButton
+                    android:id="@+id/profilefemaleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Female"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+
+                <RadioButton
+                    android:id="@+id/profileotherId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Other"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Enter Mobile Number"
+                android:textColorHint="@color/orange"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/profileMobileEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Enter Height in centimeters"
+                android:textColorHint="@color/orange"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/profileHeightEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Enter Weight in kilograms"
+                android:textColorHint="@color/orange"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/profileWeightEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medTS" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/profileSaveBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_bg_two"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medTS" />
+
+            <Button
+                android:id="@+id/logoutBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/button_bg_two"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medTS" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallTS">30sp</dimen>
+    <dimen name="medTS">32sp</dimen>
+    <dimen name="largeTS">40sp</dimen>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.2"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="Your Disaster Preparedness%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medTS" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/black">
+
+            <info.abdolahi.CircularMusicProgressBar
+                android:id="@+id/seekBarProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@color/orange"
+                app:border_color="#80CBC4"
+                app:border_width="12dp"
+                app:centercircle_diammterer="1"
+                app:draw_anticlockwise="false"
+                app:progress_color="#00796B"
+                app:progress_startAngle="90" />
+
+            <TextView
+                android:id="@+id/progressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="48%"
+                android:textColor="@color/white"
+                android:textSize="48sp" />
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.2"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="Long Press the above button for rescue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medTS" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.8"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/goBagBt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_bg_three"
+                    android:padding="2dp"
+                    android:text="Go Bag"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medTS" />
+
+                <Button
+                    android:id="@+id/goBagInfoBt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_bg_three"
+                    android:padding="2dp"
+                    android:text="Go Bag Info"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medTS" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/meetupBt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_bg_three"
+                    android:padding="2dp"
+                    android:text="Meetup Plan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medTS" />
+
+                <Button
+                    android:id="@+id/disasterBt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_bg_three"
+                    android:padding="2dp"
+                    android:text="Disaster Info"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medTS" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/newsBt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_bg_three"
+                    android:padding="2dp"
+                    android:text="Useful Links"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medTS" />
+
+                <Button
+                    android:id="@+id/evacBt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_bg_three"
+                    android:padding="2dp"
+                    android:text="Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medTS" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
